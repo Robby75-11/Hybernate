@@ -77,4 +77,15 @@ public class Studente {
     public void setTipoStudente(TipoStudente tipoStudente) {
         this.tipoStudente = tipoStudente;
     }
+    @Override
+    public String toString() {
+        return "Studente{" +
+                "matricola=" + matricola +
+                ", nome='" + nome + '\'' +
+                ", cognome='" + cognome + '\'' +
+                ", dataNascita=" + dataNascita +
+                ", tipoStudente=" + tipoStudente +
+                '}';
+    }
+
 }

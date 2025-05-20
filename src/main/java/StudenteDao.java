@@ -18,7 +18,7 @@ public class StudenteDao {
 
     }
 
-    public void Studente(){}
+
 
 
 
@@ -48,10 +48,16 @@ public class StudenteDao {
 
         Studente s  = getById(matricola);
 
-        if(s!=null){
+        if(s!=null) {
             em.getTransaction().begin();
             em.remove(s);
             em.getTransaction().commit();
+
+        }
+
+        else{
+            System.out.println("Studente con matricola"+matricola+ "non trovato");
+
         }
     }
 }

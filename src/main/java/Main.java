@@ -23,10 +23,10 @@ public class Main {
         }
 
 
-        dao.getById(s1.getMatricola());
+       
 
         System.out.println(dao.getById(s1.getMatricola()));
 
-        dao.rimuovi(3);
+        dao.rimuovi(2);
     }
 }
