@@ -27,6 +27,7 @@ public class Studente {
     @Column(name = "tipo_studente" )
     private TipoStudente tipoStudente;
 
+
     public Studente(int matricola, String nome, String cognome, LocalDate dataNascita, TipoStudente tipoStudente) {
         this.matricola = matricola;
         this.nome = nome;

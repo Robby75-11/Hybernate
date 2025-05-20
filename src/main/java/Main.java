@@ -14,6 +14,7 @@ public class Main {
 
         Studente s1 = new Studente(new Random().nextInt(10, 1000),"Mario","Rossi" ,
                 LocalDate.of(2000, 6, 6),TipoStudente.RESIDENTE);
+
         try {
             dao.salva(s1);
         }
@@ -26,6 +27,6 @@ public class Main {
 
         System.out.println(dao.getById(s1.getMatricola()));
 
-        dao.rimuovi(2);
+        dao.rimuovi(3);
     }
 }
